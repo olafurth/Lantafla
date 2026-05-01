@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Y axis -->
+    <path
+        android:pathData="M28,78 L28,24"
+        android:strokeColor="#FFD600"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round" />
+
+    <!-- Y axis arrowhead -->
+    <path
+        android:pathData="M23,30 L28,22 L33,30"
+        android:strokeColor="#FFD600"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- X axis -->
+    <path
+        android:pathData="M28,78 L86,78"
+        android:strokeColor="#FFD600"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round" />
+
+    <!-- X axis arrowhead -->
+    <path
+        android:pathData="M80,73 L86,78 L80,83"
+        android:strokeColor="#FFD600"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Rising line graph -->
+    <path
+        android:pathData="M36,68 L52,56 L66,42 L80,30"
+        android:strokeColor="#FFD600"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Data point: (36, 68) -->
+    <path
+        android:pathData="M36,68 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFD600" />
+
+    <!-- Data point: (52, 56) -->
+    <path
+        android:pathData="M52,56 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFD600" />
+
+    <!-- Data point: (66, 42) -->
+    <path
+        android:pathData="M66,42 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFD600" />
+
+    <!-- Data point: (80, 30) -->
+    <path
+        android:pathData="M80,30 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:fillColor="#FFD600" />
+
+</vector>

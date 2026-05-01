@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lántafla</string>
+
+    <!-- Inputs -->
+    <string name="hint_amount">Lánsupphæð (kr.)</string>
+    <string name="hint_months">Lánstími (mán.)</string>
+    <string name="hint_rate">Vextir (%)</string>
+    <string name="hint_inflation">Verðbólga (%)</string>
+    <string name="btn_calculate">Reikna</string>
+
+    <!-- Tabs -->
+    <string name="tab_jg_ov">Jafngreiðslulán ÓV</string>
+    <string name="tab_jg_vt">Jafngreiðslulán VT</string>
+    <string name="tab_ja_ov">Jafnar afborganir ÓV</string>
+    <string name="tab_ja_vt">Jafnar afborganir VT</string>
+
+    <!-- Table columns -->
+    <string name="col_month">Mán.</string>
+    <string name="col_payment">Greiðsla</string>
+    <string name="col_interest">Vextir</string>
+    <string name="col_principal">Afborgun</string>
+    <string name="col_inflation">Verðbætur</string>
+    <string name="col_balance">Eftirstöðvar</string>
+
+    <!-- Status -->
+    <string name="status_total_payment">Samtals: %s</string>
+    <string name="status_total_interest">Vextir: %s</string>
+    <string name="status_total_inflation">Verðbætur: %s</string>
+    <string name="error_input">Fylltu inn lánsupphæð, lánstíma og vexti</string>
+</resources>
