@@ -21,13 +21,10 @@ object LoanCalculator {
         balance   = balance.coerceAtLeast(0.0).toLong()
     )
 
-    private fun effectiveMonthlyRate(annualRatePct: Double): Double =
-        (1.0 + annualRatePct / 100.0).pow(1.0 / 12.0) - 1.0
-
     // ── 1. Óverðtryggt jafngreiðslulán ───────────────────────────────────────
 
     fun jafngreidslur(principal: Double, months: Int, annualRatePct: Double): List<PaymentRow> {
-        val r   = effectiveMonthlyRate(annualRatePct)
+        val r   = annualRatePct / 100.0 / 12.0
         val pmt = annuityPayment(principal, r, months)
         var balance = principal
         return (1..months).map { k ->
@@ -41,7 +38,7 @@ object LoanCalculator {
     // ── 2. Óverðtryggt jafnar afborganir ─────────────────────────────────────
 
     fun jafnarAfborganir(principal: Double, months: Int, annualRatePct: Double): List<PaymentRow> {
-        val r       = effectiveMonthlyRate(annualRatePct)
+        val r       = annualRatePct / 100.0 / 12.0
         val afborgun = principal / months
         var balance  = principal
         return (1..months).map { k ->
