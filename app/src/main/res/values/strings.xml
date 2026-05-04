@@ -7,7 +7,13 @@
     <string name="hint_months">Lánstími (mán.)</string>
     <string name="hint_rate">Vextir (%)</string>
     <string name="hint_inflation">Verðbólga (%)</string>
+    <string name="hint_lantokukostnadur">Lántökukostnaður (%)</string>
+    <string name="hint_skjalarerd">Skjalagerð (kr.)</string>
+    <string name="hint_greidslugald">Greiðslugjald (kr.)</string>
     <string name="btn_calculate">Reikna</string>
+    <string name="btn_toggle_hide">▲ Fela innslátt</string>
+    <string name="btn_toggle_show">▼ Sýna innslátt</string>
+    <string name="label_kostnadur">Kostnaður (valkvætt)</string>
 
     <!-- Tabs -->
     <string name="tab_jg_ov">Jafngreiðslulán ÓV</string>

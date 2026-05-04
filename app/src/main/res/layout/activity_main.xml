@@ -15,6 +15,7 @@
 
     <!-- Input card -->
     <androidx.cardview.widget.CardView
+        android:id="@+id/inputCard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -101,6 +102,73 @@
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
+            <!-- Fee fields divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="6dp"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/label_kostnadur"
+                android:textSize="11sp"
+                android:textColor="#757575" />
+
+            <!-- Lántökukostnaður + Skjalagerð -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_lantokukostnadur"
+                    android:layout_marginEnd="6dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etLantokukostnadur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_skjalarerd">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSkjalarerd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:singleLine="true" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Greiðslugjald -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/hint_greidslugald">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etGreidslugald"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
             <!-- Calculate button -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCalculate"
@@ -110,6 +178,19 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <!-- Collapse/expand toggle (shown after first calculation) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnToggleInput"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="0dp"
+        android:paddingBottom="2dp"
+        android:text="@string/btn_toggle_hide"
+        android:textSize="11sp"
+        android:visibility="gone" />
 
     <!-- Tab chips: 2×2 grid -->
     <LinearLayout
