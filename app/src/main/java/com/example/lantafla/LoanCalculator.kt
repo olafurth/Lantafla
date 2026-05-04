@@ -59,7 +59,7 @@ object LoanCalculator {
         principal: Double, months: Int,
         annualRatePct: Double, annualInflationPct: Double
     ): List<PaymentRow> {
-        val r   = annualRatePct / 100.0 / 12.0
+        val r   = monthlyInflation(annualRatePct)   // effective monthly real rate
         val m   = monthlyInflation(annualInflationPct)
         val rn  = r + m                                  // nominal monthly rate
         val pmt = annuityPayment(principal, rn, months)  // fixed each month
@@ -83,7 +83,7 @@ object LoanCalculator {
         principal: Double, months: Int,
         annualRatePct: Double, annualInflationPct: Double
     ): List<PaymentRow> {
-        val r        = annualRatePct / 100.0 / 12.0
+        val r        = monthlyInflation(annualRatePct)   // effective monthly real rate
         val m        = monthlyInflation(annualInflationPct)
         val afborgun = principal / months                // fixed nominal afborgun
         var balance  = principal
